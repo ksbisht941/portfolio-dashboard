@@ -10,109 +10,343 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
+
+    <!-- style -->
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- HEADER -->
     <header class="header">
-      <div>
-        <div class="humburger"></div>
-
         <div class="title">
           <h2>My Portfolio</h2>
         </div>
-      </div>
-      <div>
-        <div class="notify"></div>
-
         <div class="user">
-          <figure class="avatar"></figure>
+          <figure class="avatar">
+            <img  src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=40&w=40" alt="">
+          </figure>
           <span>Micheal</span>
         </div>
-      </div>
     </header>
 
-    <section>
+    <section style="margin-top: 40px;">
       <!-- ASIDE -->
       <aside class="aside">
         <ul class="aside-menu">
-          <li class="aside-menu_item"><i class='bx bx-home'></i></li>
-          <li class="aside-menu_item"><i class='bx bx-user-circle' ></i></li>
-          <li class="aside-menu_item"><i class='bx bx-chat' ></i></li>
-          <li class="aside-menu_item"><i class='bx bx-calendar' ></i></li>
-          <li class="aside-menu_item"><i class='bx bx-time-five' ></i></li>
+          <li class="aside-menu-item">
+            <div class="icon-box">
+              <i class="bx bx-home"></i>
+            </div>
+          </li>
+          <li class="aside-menu-item">
+            <div class="icon-box">
+              <i class="bx bx-user-circle"></i>
+            </div>
+          </li>
+          <li class="aside-menu-item">
+            <div class="icon-box">
+              <i class="bx bx-chat"></i>
+            </div>
+          </li>
+          <li class="aside-menu-item">
+            <div class="icon-box">
+              <i class="bx bx-calendar"></i>
+            </div>
+          </li>
+          <li class="aside-menu-item">
+            <div class="icon-box">
+              <i class="bx bx-time-five"></i>
+            </div>
+          </li>
         </ul>
       </aside>
 
       <!-- MAIN -->
       <main class="main">
-          <div class="wrapper">
-              <div class="hero">
+        <div class="wrapper">
+          <!-- HERO -->
+          <div class="hero">
+            <div class="hero-heading">
+              <h3>My Project</h3>
+              <span>Pending | July, 2021</span>
+            </div>
 
+            <div class="hero-search">
+              <div class="input-group">
+                <input type="text" name="" id="" />
+                <i class="bx bx-search"></i>
               </div>
-              <div class="chat">
-                  <div class="chat-heading">
-                      <h5>Client Messages</h5>
-                      <span><i class="bx bx-search"></i></span>
-                  </div>
-                  <div role="list" class="chat-list">
-                      <div class="chat-item" role="listitem">
-                          <figure><img src="" alt="" class="chat-avatar"></figure>
-                          <div>
-                              <h6 class="chat-identifier">David <span><i class="bx bx-star"></i></span></h6>
-                              <p>Hey tell me about progress of project? Waiting of your response</p>
-                              <time>19 July</time>
-                          </div>
-                      </div>
-                      <div class="chat-item" role="listitem">
-                          <figure><img src="" alt="" class="chat-avatar"></figure>
-                          <div>
-                              <h6 class="chat-identifier">David <span><i class="bx bx-star"></i></span></h6>
-                              <p>Hey tell me about progress of project? Waiting of your response</p>
-                              <time>19 July</time>
-                          </div>
-                      </div>
-                      <div class="chat-item" role="listitem">
-                          <figure><img src="" alt="" class="chat-avatar"></figure>
-                          <div>
-                              <h6 class="chat-identifier">David <span><i class="bx bx-star"></i></span></h6>
-                              <p>Hey tell me about progress of project? Waiting of your response</p>
-                              <time>19 July</time>
-                          </div>
-                      </div>
-                      <div class="chat-item" role="listitem">
-                          <figure><img src="" alt="" class="chat-avatar"></figure>
-                          <div>
-                              <h6 class="chat-identifier">David <span><i class="bx bx-star"></i></span></h6>
-                              <p>Hey tell me about progress of project? Waiting of your response</p>
-                              <time>19 July</time>
-                          </div>
-                      </div>
-                      <div class="chat-item" role="listitem">
-                          <figure><img src="" alt="" class="chat-avatar"></figure>
-                          <div>
-                              <h6 class="chat-identifier">David <span><i class="bx bx-star"></i></span></h6>
-                              <p>Hey tell me about progress of project? Waiting of your response</p>
-                              <time>19 July</time>
-                          </div>
-                      </div>
-                      <div class="chat-item" role="listitem">
-                          <figure><img src="" alt="" class="chat-avatar"></figure>
-                          <div>
-                              <h6 class="chat-identifier">David <span><i class="bx bx-star"></i></span></h6>
-                              <p>Hey tell me about progress of project? Waiting of your response</p>
-                              <time>19 July</time>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+              <span>Filter <i class="bx bx-filter-alt"></i></span>
+            </div>
+
+            <div class="hero-heading">
+              <h3>Ongoing Project <i class="bx bx-chevron-down"></i></h3>
+            </div>
+
+            <div class="project">
+                <div class="col">
+                    <div class="project-card">
+                        <div class="card-header">
+                            <date>Oct 2, 2021</date>
+                            <span><i class='bx bx-dots-vertical-rounded'></i></span>
+                        </div>
+                        <div class="card-body">
+                            <h6>Web Designing</h6>
+                            <p>Prototype</p>
+                            <div class="progress-box">
+                                <label for="progress">Progress</label>
+                                <progress id="progress" value="90" max="100"> 90% </progress>
+                                <span>90%</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <ul class="team">
+                                <li class="team-member">
+                                    <img  src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=30&w=30" alt="">
+                                </li>
+                                <li class="team-member">
+                                    <img  src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=30&w=30" alt="">
+                                </li>
+                                <li class="team-member">
+                                    <img  src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=30&w=30" alt="">
+                                </li>
+                            </ul>
+                            <span class="deadline">2 days left</span>
+    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="project-card">
+                        <div class="card-header">
+                            <date>Oct 18, 2021</date>
+                            <span><i class='bx bx-dots-vertical-rounded'></i></span>
+                        </div>
+                        <div class="card-body">
+                            <h6>Mobile App</h6>
+                            <p>Shopping</p>
+                            <div class="progress-box">
+                                <label for="progress">Progress</label>
+                                <progress id="progress" value="30" max="100"> 30% </progress>
+                                <span>30%</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <ul class="team">
+                                <li class="team-member">
+                                    <img  src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=30&w=30" alt="">
+                                </li>
+                                <li class="team-member">
+                                    <img  src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=30&w=30" alt="">
+                                </li>
+                            </ul>
+                            <span class="deadline">7 days left</span>
+    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="project-card">
+                        <div class="card-header">
+                            <date>Nov 7, 2021</date>
+                            <span><i class='bx bx-dots-vertical-rounded'></i></span>
+                        </div>
+                        <div class="card-body">
+                            <h6>Dashboard</h6>
+                            <p>Medical</p>
+                            <div class="progress-box">
+                                <label for="progress">Progress</label>
+                                <progress id="progress" value="50" max="100"> 50% </progress>
+                                <span>50%</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <ul class="team">
+                                <li class="team-member">
+                                    <img  src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=30&w=30" alt="">
+                                </li>
+                                <li class="team-member">
+                                    <img  src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=30&w=30" alt="">
+                                </li>
+                                <li class="team-member">
+                                    <img  src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=30&w=30" alt="">
+                                </li>
+                                <li class="team-member">
+                                    <img  src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=30&w=30" alt="">
+                                </li>
+                            </ul>
+                            <span class="deadline">5 days left</span>
+    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="project-card">
+                        <div class="card-header">
+                            <date>Nov 20, 2021</date>
+                            <span><i class='bx bx-dots-vertical-rounded'></i></span>
+                        </div>
+                        <div class="card-body">
+                            <h6>Web Designing</h6>
+                            <p>Wireframing</p>
+                            <div class="progress-box">
+                                <label for="progress">Progress</label>
+                                <progress id="progress" value="20" max="100"> 20% </progress>
+                                <span>20%</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <ul class="team">
+                                <li class="team-member">
+                                    <img  src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=30&w=30" alt="">
+                                </li>
+                                <li class="team-member">
+                                    <img  src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=30&w=30" alt="">
+                                </li>
+                                <li class="team-member">
+                                    <img  src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=30&w=30" alt="">
+                                </li>
+                            </ul>
+                            <span class="deadline">10 days left</span>
+    
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
           </div>
+
+          <!-- CHAT -->
+          <div class="chat">
+            <div class="chat-heading">
+              <h5>Client Messages</h5>
+              <span><i class="bx bx-search"></i></span>
+            </div>
+            <div role="list" class="chat-list">
+              <div class="chat-item" role="listitem">
+                <figure>
+                  <img
+                    src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=60&w=60"
+                    alt=""
+                    class="chat-avatar"
+                  />
+                </figure>
+                <div>
+                  <h6 class="chat-identifier">
+                    David <span><i class="bx bx-star"></i></span>
+                  </h6>
+                  <p>
+                    Hey tell me about progress of project? Waiting of your
+                    response
+                  </p>
+                  <time>19 July</time>
+                </div>
+              </div>
+              <div class="chat-item" role="listitem">
+                <figure>
+                  <img
+                    src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+                    alt=""
+                    class="chat-avatar"
+                  />
+                </figure>
+                <div>
+                  <h6 class="chat-identifier">
+                    David <span><i class="bx bx-star"></i></span>
+                  </h6>
+                  <p>
+                    Hey tell me about progress of project? Waiting of your
+                    response
+                  </p>
+                  <time>19 July</time>
+                </div>
+              </div>
+              <div class="chat-item" role="listitem">
+                <figure>
+                  <img
+                    src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=60&w=60"
+                    alt=""
+                    class="chat-avatar"
+                  />
+                </figure>
+                <div>
+                  <h6 class="chat-identifier">
+                    David <span><i class="bx bx-star"></i></span>
+                  </h6>
+                  <p>
+                    Hey tell me about progress of project? Waiting of your
+                    response
+                  </p>
+                  <time>19 July</time>
+                </div>
+              </div>
+              <div class="chat-item" role="listitem">
+                <figure>
+                  <img
+                    src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+                    alt=""
+                    class="chat-avatar"
+                  />
+                </figure>
+                <div>
+                  <h6 class="chat-identifier">
+                    David <span><i class="bx bx-star"></i></span>
+                  </h6>
+                  <p>
+                    Hey tell me about progress of project? Waiting of your
+                    response
+                  </p>
+                  <time>19 July</time>
+                </div>
+              </div>
+              <div class="chat-item" role="listitem">
+                <figure>
+                  <img
+                    src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=60&w=60"
+                    alt=""
+                    class="chat-avatar"
+                  />
+                </figure>
+                <div>
+                  <h6 class="chat-identifier">
+                    David <span><i class="bx bx-star"></i></span>
+                  </h6>
+                  <p>
+                    Hey tell me about progress of project? Waiting of your
+                    response
+                  </p>
+                  <time>19 July</time>
+                </div>
+              </div>
+              <div class="chat-item" role="listitem">
+                <figure>
+                  <img
+                    src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+                    alt=""
+                    class="chat-avatar"
+                  />
+                </figure>
+                <div>
+                  <h6 class="chat-identifier">
+                    David <span><i class="bx bx-star"></i></span>
+                  </h6>
+                  <p>
+                    Hey tell me about progress of project? Waiting of your
+                    response
+                  </p>
+                  <time>19 July</time>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
     </section>
 
-    <!-- boxicon -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
-    />
+    <!-- tilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.4.1/vanilla-tilt.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
