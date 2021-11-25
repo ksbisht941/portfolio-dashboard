@@ -104,6 +104,7 @@ aside ul.aside-menu li.aside-menu-item:hover .icon-box {
 main {
     margin-top: 80px;
     margin-left: 100px;
+
 }
 
 main .wrapper {
@@ -123,6 +124,7 @@ main .wrapper .hero {
     -moz-border-radius: 40px;
     -ms-border-radius: 40px;
     -o-border-radius: 40px;
+    margin-bottom: 30px;
 }
 
 main .wrapper .hero .hero-heading {

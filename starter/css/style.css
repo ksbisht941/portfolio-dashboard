@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(10 7 14);
+    color: #fff;
+}
+
+/* HEADER */
+
+/* ASIDE */
+
+/* MAIN */
+
+/* HERO */
+
+/* CHAT */
